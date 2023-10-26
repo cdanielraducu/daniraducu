@@ -1,0 +1,65 @@
+---
+import H1 from "../components/H1.astro";
+import H2 from "../components/H2.astro";
+import Main from "../components/Main.astro";
+
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Work | RAD Applications">
+  <Main>
+    <div class="flex flex-col justify-center">
+      <div class="flex items-center space-x-8 mb-8">
+        <div>
+          <p class="text-2xl font-bold text-white mb-2">
+            Thanks for stopping by.
+          </p>
+          <p class="text-lg font-regular text-white">
+            You've clicked here to learn more about the company, but since I am
+            the only one in this company I'll speak more about me and why I've
+            started this company.
+          </p>
+        </div>
+        <img
+          src="/about_profile_photo.JPG"
+          class="rounded-2xl aspect-thumbnail object-cover aspect-[13/12] h-[500px]"
+        />
+      </div>
+      <div class="mb-4">
+        <H2 text="Who am I?" />
+        <p class="text-md font-regular text-white">
+          I am Dani. Graduated from University of Mathematics & Computer -
+          Science, almost two years ago. Thankfully I was able to work full-time
+          while I was also a student. More than 3 years of experience already,
+          that is a blessing. Now, I'm using my time to grow in multiple areas.
+          On the home page you've probably seen the three chips. Christian.
+          Developer. Reader. I think that these describe me best. Being a
+          christian I am trying to do everything, even work, by His grace, for
+          Him. My vocation of being a developer is an instrument in order to
+          live day by day. But it is also a passion - looking for cool problems
+          that I can solve, it is quite interesting. But everything I do,
+          gravitates around the first fact about me, being a christian. The
+          third one, reader, is probably the most visible hobby of mine. I
+          didn't like to read until I've entered univ. But apparently, it is
+          quite a helpful habit. And that's why I try to read as much as
+          possible about all sorts of stuff - tho' I'm more focused on Theology.
+        </p>
+      </div>
+      <div class="my-4">
+        <H2 text="Why this company?" />
+        <p class="text-md font-regular text-white">
+          Well I want to work responsibly. A thing that I've discovered lately
+          is that with only one client I have some time to spare. But I could
+          also take maybe something more to work on. This company allows me more
+          easily do that and to track every paper work required by a trusted
+          accountant. That way, I can focus more on the work itself and not so
+          much of the other administration things.
+        </p>
+        <p class="my-8 text-md font-regular text-white">
+          So, if you want me to solve a problem for you, write me a mail to:
+          <i>cdanielraducu@gmail.com</i>. Will respond shortly. Bless you!
+        </p>
+      </div>
+    </div>
+  </Main>
+</Layout>
