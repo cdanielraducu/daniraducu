@@ -1,0 +1,33 @@
+---
+interface Props {
+  width?: string;
+  height?: string;
+}
+---
+
+<svg
+  width={Astro.props?.width ?? "24"}
+  height={Astro.props?.height ?? "24"}
+  viewBox="0 0 24 24"
+  fill="none"
+>
+  <mask
+    id="mask0_12_4"
+    style="mask-type:alpha"
+    maskUnits="userSpaceOnUse"
+    x="0"
+    y="0"
+    width="24"
+    height="24"
+  >
+    <rect y="0.674728" width="24" height="24" fill="#FFF"></rect>
+  </mask>
+  <g mask="url(#mask0_12_4)">
+    <path
+      d="M12 24.6747C11.3167 24.6747 10.75 24.6767 10.75 22.9212V2.45569C10.75 0.700278 11.3167 0.674728 12 0.674728C12.6833 0.674728 13.25 0.700278 13.25 2.45569V22.9212C13.25 24.6767 12.6833 24.6747 12 24.6747Z"
+      fill="#FFF"></path>
+    <path
+      d="M19.2007 9.49873H4.82361C4.16865 9.49873 4 8.93207 4 8.24873C4 7.5654 4.16865 6.99873 4.82361 6.99873H19.2007C19.8556 6.99873 20 7.5654 20 8.24873C20 8.93207 19.8556 9.49873 19.2007 9.49873Z"
+      fill="#FFF"></path>
+  </g>
+</svg>

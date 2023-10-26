@@ -5,6 +5,9 @@ import H1 from "../components/H1.astro";
 import Main from "../components/Main.astro";
 import H2 from "../components/H2.astro";
 import { Image } from "astro:assets";
+import CrossIcon from "../components/icons/CrossIcon.astro";
+import DeveloperIcon from "../components/icons/DeveloperIcon.astro";
+import ReadIcon from "../components/icons/ReadIcon.astro";
 ---
 
 <Layout title="Welcome to RAD Applications">
@@ -16,14 +19,17 @@ import { Image } from "astro:assets";
           text="I am a Frontend Developer who is currently based in Bucharest, Romania."
         />
         <div class="flex flex-row space-x-2">
-          <div class="bg-zinc-600 rounded-3xl w-max p-2">
-            <p class="text-md text-white font-medium">Christian</p>
+          <div class="bg-zinc-600 rounded-3xl w-max p-2.5 flex">
+            <CrossIcon />
+            <p class="text-md text-white font-medium ml-1">Christian</p>
           </div>
-          <div class="bg-zinc-600 rounded-3xl w-max p-2">
-            <p class="text-md text-white font-medium">Developer</p>
+          <div class="bg-zinc-600 rounded-3xl w-max p-3 flex">
+            <DeveloperIcon />
+            <p class="text-md text-white font-medium ml-2">Developer</p>
           </div>
-          <div class="bg-zinc-600 rounded-3xl w-max p-2">
-            <p class="text-md text-white font-medium">Reader</p>
+          <div class="bg-zinc-600 rounded-3xl w-max p-3 flex">
+            <ReadIcon />
+            <p class="text-md text-white font-medium ml-2">Reader</p>
           </div>
         </div>
       </div>

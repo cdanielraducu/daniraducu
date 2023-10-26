@@ -1,0 +1,38 @@
+---
+interface Props {
+  width?: string;
+  height?: string;
+}
+---
+
+<svg
+  width={Astro.props?.width ?? "24"}
+  height={Astro.props?.height ?? "24"}
+  viewBox="0 0 27 28"
+  fill="none"
+>
+  <path
+    d="M26 19.7712V4.25545C26 2.71287 24.824 1.56879 23.396 1.69734H23.324C20.804 1.92873 16.976 3.30419 14.84 4.74393L14.636 4.88533C14.288 5.11672 13.712 5.11672 13.364 4.88533L13.064 4.69251C10.928 3.26563 7.112 1.90302 4.592 1.68449C3.164 1.55594 2 2.71287 2 4.24259V19.7712C2 21.0052 2.936 22.1622 4.088 22.3164L4.436 22.3678C7.04 22.7406 11.06 24.1546 13.364 25.5044L13.412 25.5301C13.736 25.7229 14.252 25.7229 14.564 25.5301C16.868 24.1675 20.9 22.7406 23.516 22.3678L23.912 22.3164C25.064 22.1622 26 21.0052 26 19.7712Z"
+    stroke="#FFF"
+    stroke-width="2.2588"
+    stroke-linecap="round"
+    stroke-linejoin="round"></path>
+  <path
+    d="M14 5.3096V24.5918"
+    stroke="#FFF"
+    stroke-width="2.2588"
+    stroke-linecap="round"
+    stroke-linejoin="round"></path>
+  <path
+    d="M8.9 9.16605H6.2"
+    stroke="#FFF"
+    stroke-width="2.2588"
+    stroke-linecap="round"
+    stroke-linejoin="round"></path>
+  <path
+    d="M9.8 13.0225H6.2"
+    stroke="#FFF"
+    stroke-width="2.2588"
+    stroke-linecap="round"
+    stroke-linejoin="round"></path>
+</svg>
