@@ -3,10 +3,34 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import H1 from "../components/H1.astro";
 import Main from "../components/Main.astro";
+import H2 from "../components/H2.astro";
+import { Image } from "astro:assets";
 ---
 
 <Layout title="Welcome to RAD Applications">
   <Main>
-    <H1 text="RAD Applications" />
+    <div class="flex flex-col items-start lg:flex-row lg:items-center">
+      <div class="flex-col">
+        <H1 text="Hello, my name is Dani Raducu." />
+        <H2
+          text="I am a Frontend Developer who is currently based in Bucharest, Romania."
+        />
+        <div class="flex flex-row space-x-2">
+          <div class="bg-zinc-600 rounded-3xl w-max p-2">
+            <p class="text-md text-white font-medium">Christian</p>
+          </div>
+          <div class="bg-zinc-600 rounded-3xl w-max p-2">
+            <p class="text-md text-white font-medium">Developer</p>
+          </div>
+          <div class="bg-zinc-600 rounded-3xl w-max p-2">
+            <p class="text-md text-white font-medium">Reader</p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="/home_profile_photo.JPG"
+        class="rounded-2xl aspect-thumbnail object-cover aspect-square w-[400px] pl-0 lg:pl-4"
+      />
+    </div>
   </Main>
 </Layout>
