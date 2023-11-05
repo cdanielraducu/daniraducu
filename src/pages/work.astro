@@ -1,6 +1,5 @@
 ---
 import { getCollection } from "astro:content";
-import H1 from "../components/H1.astro";
 import Main from "../components/Main.astro";
 import Layout from "../layouts/Layout.astro";
 import PostsList from "../components/PostsList.astro";
@@ -8,9 +7,8 @@ import PostsList from "../components/PostsList.astro";
 const posts = await getCollection("posts");
 ---
 
-<Layout title="Work | RAD Applications">
-  <Main>
-    <H1 text="Work" />
+<Layout title="Work">
+  <Main class="top-[40%]">
     <PostsList posts={posts} />
   </Main>
 </Layout>

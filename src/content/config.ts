@@ -6,6 +6,8 @@ const postsCollections = defineCollection({
     date: z.string(),
     image: z.string(),
     title: z.string(),
+    industry: z.string(),
+    duration: z.string(),
   }),
 });
 
