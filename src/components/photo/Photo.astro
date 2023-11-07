@@ -1,14 +1,21 @@
 ---
+import coremaker from './images/coremaker_image.webp';
+import deepstash from "./images/deepstash_dark_image.webp";
+import about from "./images/about_profile_photo.webp";
+import home from "./images/home_profile_photo.webp";
+import {Image } from 'astro:assets';
+
+
 interface Props {
   src: string;
   class?: string;
 }
 
 const IMAGES = {
-    home: "src/components/Photo/images/home_profile_photo.webp",
-    about: "src/components/Photo/images/about_profile_photo.webp",
-    deepstash: "src/components/Photo/images/deepstash_dark_image.webp",
-    coremaker: "src/components/Photo/images/coremaker_image.webp",
+    home: about,
+    about: about,
+    deepstash: deepstash,
+    coremaker: coremaker,
 }
 console.log(IMAGES[Astro.props.src])
 
@@ -16,8 +23,8 @@ console.log(IMAGES[Astro.props.src])
 
 ---
 
-<img
+<Image
   src={IMAGES[Astro.props.src]}
   alt={Astro.props.src}
-  class={`rounded-2xl object-cover shadow-xl  ${Astro.props.class}`}
+  class={`rounded-2xl object-cover shadow-2xl  ${Astro.props.class}`}
 />
