@@ -1,0 +1,51 @@
+---
+interface Props {
+  width?: string;
+  height?: string;
+}
+---
+
+<svg
+  width={Astro.props?.width ?? "24"}
+  height={Astro.props?.height ?? "24"}
+  viewBox="0 0 25 25"
+  fill="none"
+>
+  <mask
+    id="mask0_59_20"
+    style="mask-type:alpha"
+    maskUnits="userSpaceOnUse"
+    x="0"
+    y="0"
+    width="25"
+    height="25"
+  >
+    <rect x="0.347786" y="0.848663" width="24" height="24" fill="#FFF"></rect>
+  </mask>
+  <g mask="url(#mask0_59_20)">
+    <path
+      d="M22.8478 8.182V17.5153C22.8478 20.737 20.2361 23.3487 17.0145 23.3487H7.68112C4.45946 23.3487 1.84779 20.737 1.84779 17.5153V8.182C1.84779 4.96034 4.45946 2.34866 7.68112 2.34866H17.0145C20.2361 2.34866 22.8478 4.96034 22.8478 8.182Z"
+      stroke="#FFF"
+      stroke-width="1.8"
+      stroke-linecap="round"
+      stroke-linejoin="round"></path>
+    <path
+      d="M6.51445 18.682V14.5987V10.5154"
+      stroke="#FFF"
+      stroke-width="1.8"
+      stroke-linecap="round"
+      stroke-linejoin="round"></path>
+    <path
+      d="M11.1811 18.682V14.8904M11.1811 14.8904V10.5154M11.1811 14.8904C11.1811 10.5154 18.1811 10.5154 18.1811 14.8904V18.682"
+      stroke="#FFF"
+      stroke-width="1.8"
+      stroke-linecap="round"
+      stroke-linejoin="round"></path>
+    <path
+      d="M6.51445 7.02762L6.52668 7.01404"
+      stroke="#FFF"
+      stroke-width="1.8"
+      stroke-linecap="round"
+      stroke-linejoin="round"></path>
+  </g>
+</svg>

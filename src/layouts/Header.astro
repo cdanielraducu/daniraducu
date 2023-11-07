@@ -1,4 +1,7 @@
 ---
+import GitHubIcon from "../components/icons/GitHubIcon.astro";
+import LinkedInIcon from "../components/icons/LinkedInIcon.astro";
+import XIcon from "../components/icons/XIcon.astro";
 const textLinks: { label: string; href: string }[] = [
   { label: "Home", href: "/" },
   { label: "Work", href: "/work" },
@@ -7,8 +10,31 @@ const textLinks: { label: string; href: string }[] = [
 ---
 
 <header
-  class="flex justify-end items-center px-24 py-12 max-sm:px-5 max-sm:py-10 max-w-7xl w-full mx-auto"
+  class="flex justify-between items-center px-24 py-12 max-sm:px-5 max-sm:py-10 max-w-7xl w-full mx-auto"
 >
+  <div class="space-x-2 flex mx-2">
+    <a
+      href="https://twitter.com/DaniRaducu"
+      target="_blank"
+      arria-current="https://twitter.com/DaniRaducu"
+    >
+      <XIcon />
+    </a>
+    <a
+      href="https://github.com/cdanielraducu"
+      target="_blank"
+      arria-current="https://github.com/cdanielraducu"
+    >
+      <GitHubIcon />
+    </a>
+    <a
+      href="https://www.linkedin.com/in/dani-raducu-952ba8183/"
+      target="_blank"
+      arria-current="https://www.linkedin.com/in/dani-raducu-952ba8183/"
+    >
+      <LinkedInIcon />
+    </a>
+  </div>
   <div class="flex bg-zinc-50 rounded-xl p-2">
     {
       textLinks.map(({ label, href }) => {

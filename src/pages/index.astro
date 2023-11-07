@@ -13,12 +13,10 @@ import H2 from "../components/H2.astro";
     <div
       class="flex flex-col items-start lg:flex-row lg:items-center space-x-0 lg:space-x-8 space-y-8 lg:space-y-0"
     >
-      <div class="flex-col">
+      <div class="flex flex-col">
         <H1 text="Hello, this is Dani Raducu." />
         <H2 text="Based in Bucharest, Romania." />
-        <div class="flex
-          flex-row
-          space-x-2">
+        <div class="flex flex-wrap gap-2 mb-4">
           <div class="bg-zinc-600 rounded-3xl w-max p-2.5 flex">
             <CrossIcon />
             <p class="text-md text-white font-medium ml-1">Christian</p>
@@ -32,11 +30,11 @@ import H2 from "../components/H2.astro";
             <p class="text-md text-white font-medium ml-2">Reader</p>
           </div>
         </div>
+        <img
+          src="/home_profile_photo.JPG"
+          class="rounded-2xl aspect-thumbnail object-cover aspect-square w-[280px] lg:w-[360px]"
+        />
       </div>
-      <img
-        src="/home_profile_photo.JPG"
-        class="rounded-2xl aspect-thumbnail object-cover aspect-square w-[400px]"
-      />
     </div>
   </Main>
 </Layout>

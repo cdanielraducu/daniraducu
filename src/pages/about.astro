@@ -9,7 +9,7 @@ import Layout from "../layouts/Layout.astro";
   <Main class="top-1/4">
     <div class="flex flex-col justify-center">
       <div class="flex items-center space-x-8 mb-8">
-        <div class="prose prose-xl text-white">
+        <div class="prose prose-lg lg:prose-xl text-white">
           <H2 text="Thanks for stopping by. Who am I?" />
           <p>
             I'm Dani, and I graduated from the University of Mathematics &
@@ -27,11 +27,11 @@ import Layout from "../layouts/Layout.astro";
         </div>
         <img
           src="/about_profile_photo.JPG"
-          class="rounded-2xl aspect-thumbnail object-cover aspect-[13/12] h-[500px]"
+          class="rounded-2xl aspect-thumbnail object-cover max-h-[500px] hidden lg:flex"
         />
       </div>
 
-      <div class="my-4 prose prose-xl text-white">
+      <div class="my-4 prose prose-lg lg:prose-xl text-white">
         <p>
           Being a developer is not just my vocation but also my passion. I enjoy
           solving interesting problems and creating useful things. But at the

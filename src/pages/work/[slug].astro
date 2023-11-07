@@ -35,7 +35,7 @@ const { Content } = await post.render();
     <div class="flex items-start">
       <img
         src={post.data.image}
-        width={180}
+        width={160}
         alt={post.data.title}
         class="rounded-2xl shadow-xl mb-4 aspect-thumbnail object-cover"
       />
@@ -44,7 +44,7 @@ const { Content } = await post.render();
         <H2 text={post.data.industry} />
       </div>
     </div>
-    <div class="prose prose-2xl text-white overflow-visible relative mb-20">
+    <div class="prose prose-lg lg:prose-xl text-white overflow-visible relative mb-20">
       <Content />
     </div>
   </Main>

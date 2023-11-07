@@ -1,0 +1,17 @@
+---
+interface Props {
+  width?: string;
+  height?: string;
+}
+---
+
+<svg
+  width={Astro.props?.width ?? "24"}
+  height={Astro.props?.height ?? "24"}
+  viewBox="0 0 25 24"
+  fill="none"
+>
+  <path
+    d="M18.4106 1.5H21.6305L14.5957 10.3955L22.8719 22.5H16.3915L11.3162 15.1585L5.50867 22.5H2.28649L9.81101 12.9854L1.87186 1.5H8.51635L13.1042 8.21021L18.4106 1.5ZM17.2803 20.3676H19.0647L7.54691 3.52046H5.6323L17.2803 20.3676Z"
+    fill="#FFF"></path>
+</svg>
