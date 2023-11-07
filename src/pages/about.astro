@@ -1,8 +1,8 @@
 ---
 import H2 from "../components/H2.astro";
 import Main from "../components/Main.astro";
-
 import Layout from "../layouts/Layout.astro";
+import Photo from "../components/photo/Photo.astro";
 ---
 
 <Layout title="About">
@@ -25,10 +25,7 @@ import Layout from "../layouts/Layout.astro";
             to do everything by God's grace for Him!
           </p>
         </div>
-        <img
-          src="/about_profile_photo.JPG"
-          class="rounded-2xl aspect-thumbnail object-cover max-h-[500px] hidden lg:flex"
-        />
+        <Photo src="about" class="max-h-[500px] hidden lg:flex" />
       </div>
 
       <div class="my-4 prose prose-lg lg:prose-xl text-white">

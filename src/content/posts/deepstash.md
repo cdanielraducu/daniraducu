@@ -5,7 +5,7 @@ slug: "deepstash"
 categories: ["mobile", "web"]
 date: 17/10/2023
 featured: false
-image: /deepstash_dark_image.jpeg
+image: deepstash
 industry: Self Development, Social Networking app
 duration: 2 years
 ---

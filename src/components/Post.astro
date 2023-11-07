@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import H2 from "./H2.astro";
+import Photo from "./photo/Photo.astro";
 type Props = {
   post: CollectionEntry<"posts">;
 };
@@ -11,12 +12,7 @@ const { post } = Astro.props;
 <article>
   <a href={`/work/${post.slug}`}>
     <div class="flex items-start">
-      <img
-        src={post.data.image}
-        width={120}
-        alt={post.data.title}
-        class="rounded-2xl shadow-xl mb-4 aspect-thumbnail object-cover"
-      />
+      <Photo src={post.data.image} class="mb-4 aspect-thumbnail" />
       <div class="flex flex-col ml-4 mt-2">
         <H2
           text={`${post.data.title} ~ ${post.data.duration}`}

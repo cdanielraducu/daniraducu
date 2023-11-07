@@ -1,0 +1,23 @@
+---
+interface Props {
+  src: string;
+  class?: string;
+}
+
+const IMAGES = {
+    home: "src/components/Photo/images/home_profile_photo.webp",
+    about: "src/components/Photo/images/about_profile_photo.webp",
+    deepstash: "src/components/Photo/images/deepstash_dark_image.webp",
+    coremaker: "src/components/Photo/images/coremaker_image.webp",
+}
+console.log(IMAGES[Astro.props.src])
+
+
+
+---
+
+<img
+  src={IMAGES[Astro.props.src]}
+  alt={Astro.props.src}
+  class={`rounded-2xl object-cover shadow-xl  ${Astro.props.class}`}
+/>

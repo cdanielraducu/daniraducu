@@ -5,7 +5,7 @@ slug: "coremaker"
 categories: ["mobile", "web"]
 date: 17/10/2023
 featured: false
-image: /coremaker_image.jpeg
+image: coremaker
 industry: Fin-Tech apps
 duration: 1 year
 ---

@@ -5,6 +5,7 @@ import Layout from "../../layouts/Layout.astro";
 import Main from "../../components/Main.astro";
 import H1 from "../../components/H1.astro";
 import H2 from "../../components/H2.astro";
+import Photo from "../../components/photo/Photo.astro";
 
 export const getStaticPaths = (async () => {
   const posts = await getCollection("posts");
@@ -33,18 +34,15 @@ const { Content } = await post.render();
 <Layout title={post.data.title}>
   <Main>
     <div class="flex items-start">
-      <img
-        src={post.data.image}
-        width={160}
-        alt={post.data.title}
-        class="rounded-2xl shadow-xl mb-4 aspect-thumbnail object-cover"
-      />
+      <Photo src={post.data.image} class="mb-4 aspect-thumbnail w-[160]" />
       <div class="ml-8 mt-4">
         <H1 transition:name="title" text={post.data.title} />
         <H2 text={post.data.industry} />
       </div>
     </div>
-    <div class="prose prose-lg lg:prose-xl text-white overflow-visible relative mb-20">
+    <div
+      class="prose prose-lg lg:prose-xl text-white overflow-visible relative mb-20"
+    >
       <Content />
     </div>
   </Main>
