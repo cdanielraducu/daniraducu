@@ -13,7 +13,7 @@ const { post } = Astro.props;
   <a href={`/work/${post.slug}`}>
     <div class="flex items-start">
       <div class="min-w-max">
-        <Photo src={post.data.image} class="mb-4 w-[120px]" />
+        <Photo src={post.data.image} class="mb-4 w-[60px] lg:w-[120px]" />
       </div>
       <div class="flex flex-col ml-4 mt-2">
         <H2
