@@ -4,7 +4,15 @@ import Main from "../components/Main.astro";
 import Layout from "../layouts/Layout.astro";
 import PostsList from "../components/PostsList.astro";
 
-const posts = await getCollection("posts");
+const allPosts = await getCollection("posts");
+const posts = allPosts.sort((a, b) => {
+  // Convert DD/MM/YYYY to MM/DD/YYYY for proper Date parsing
+  const dateA = a.data.date.split('/');
+  const dateB = b.data.date.split('/');
+  const parsedDateA = new Date(`${dateA[1]}/${dateA[0]}/${dateA[2]}`);
+  const parsedDateB = new Date(`${dateB[1]}/${dateB[0]}/${dateB[2]}`);
+  return parsedDateB.getTime() - parsedDateA.getTime();
+});
 ---
 
 <Layout title="Work">

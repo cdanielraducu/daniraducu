@@ -3,6 +3,7 @@ import coremaker from "./images/coremaker_image.webp";
 import deepstash from "./images/deepstash_dark_image.webp";
 import about from "./images/about_profile_photo.webp";
 import home from "./images/home_profile_photo.webp";
+import epam from "./images/epam_image.webp";
 import { Image } from "astro:assets";
 
 
@@ -16,11 +17,22 @@ const IMAGES = {
     about: about,
     deepstash: deepstash,
     coremaker: coremaker,
+    epam: epam,
 }
 
 ---
-<Image
-  src={IMAGES[Astro.props.src]}
-  alt={Astro.props.src}
-  class={`rounded-2xl object-cover shadow-2xl ${Astro.props.class}`}
-/>
+{Astro.props.src === "epam" ? (
+  <div class={`rounded-2xl shadow-2xl bg-white flex items-center justify-center p-4 aspect-square ${Astro.props.class}`}>
+    <Image
+      src={IMAGES[Astro.props.src]}
+      alt={Astro.props.src}
+      class="max-h-full max-w-full object-contain"
+    />
+  </div>
+) : (
+  <Image
+    src={IMAGES[Astro.props.src]}
+    alt={Astro.props.src}
+    class={`rounded-2xl object-cover shadow-2xl ${Astro.props.class}`}
+  />
+)}
