@@ -7,7 +7,7 @@ date: 21/07/2025
 featured: false
 image: epam
 industry: Software Engineering & Consulting
-duration: Current
+duration: 1 year and counting
 ---
 
 EPAM Systems is a leading global provider of digital platform engineering and development services. The company helps make the complex simple with a focus on customer experience, product engineering, and digital transformation.
