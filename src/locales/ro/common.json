@@ -1,0 +1,46 @@
+{
+  "nav": {
+    "home": "Acasă",
+    "work": "Muncă", 
+    "about": "Despre"
+  },
+  "home": {
+    "title": "Bun venit!",
+    "greeting": "Salut, sunt Dani Raducu.",
+    "location": "Cu sediul în București, România.",
+    "tags": {
+      "christian": "Creștin",
+      "developer": "Dezvoltator",
+      "reader": "Cititor"
+    }
+  },
+  "about": {
+    "title": "Despre",
+    "heading": "Mulțumesc că ai trecut pe aici. Cine sunt eu?",
+    "intro1": "Sunt Dani, inginer CTI și absolvent al Universității din București cu aproape 5 ani de experiență ca dezvoltator mobile. Sunt pasionat de utilizarea tehnologiei pentru a genera îmbunătățiri semnificative și a adăuga valoare muncii pe care o fac.",
+    "intro2": "Sunt dedicat unei munci cu scop, evitând acțiunile executate exclusiv pentru sine. Sunt proactiv în a pune întrebări pentru a planifica și executa eficient sarcinile cu precizie, și îmbrățișez provocările cu determinare ca un rezolvator de probleme persistent, cullegând mereu recompense de cunoaștere din fiecare experiență.",
+    "intro3": "Sunt dedicat învățării continue și îmbunătățirii abilităților pentru a livra soluții inovatoare și a maximiza impactul prin muncă asiduă.",
+    "intro4": "Pe pagina principală, probabil că ai observat cele trei etichete care mă descriu: Creștin, Dezvoltator și Cititor. Credința mea ca Creștin influențează tot ce fac, inclusiv munca mea, deoarece mă străduiesc să fac totul prin harul lui Dumnezeu pentru El!",
+    "passion": "A fi dezvoltator nu este doar vocația mea, ci și pasiunea mea. Îmi place să rezolv probleme interesante și să creez lucruri utile. Dar în centrul a tot este identitatea mea ca Creștin.",
+    "reading": "A treia etichetă, \"Cititor\", reprezintă unul dintre hobby-urile mele cele mai vizibile. Surprinzător, nu îmi plăcea să citesc până când am intrat la universitate, dar am ajuns să o apreciez ca pe un obicei util. Fac un efort să citesc cât mai mult posibil pe diverse subiecte, cu un accent deosebit pe cărțile de Teologie.",
+    "why_work": "De ce să alegi să lucrezi cu mine?",
+    "work_description": "Vreau să lucrez responsabil. Sunt tânăr și am timp liber - asta e ceva ce am descoperit recent este că doar cu un client. Dar aș putea să iau și mai mulți să lucrez cu ei. De aceea am creat o companie. Îmi permite să lucrez ușor pentru mai mult de un client dacă e nevoie. Cu ea sunt și capabil să urmăresc toate actele necesare de un contabil de încredere. În acest fel, mă pot concentra mai mult pe munca în sine și nu atât de mult pe celelalte lucruri administrative.",
+    "get_in_touch": "Ia legătura",
+    "contact_intro": "Dacă dorești să rezolv o problemă pentru tine, nu ezita să mă contactezi! Voi răspunde în scurt timp.",
+    "contact_form": {
+      "name": "Nume",
+      "name_placeholder": "Numele tău",
+      "message": "Mesaj", 
+      "message_placeholder": "Spune-mi despre proiectul tău...",
+      "send": "Trimite Mesajul"
+    },
+    "email_direct": "Sau trimite-mi un email direct la:",
+    "blessing": "Te binecuvântez!"
+  },
+  "work": {
+    "title": "Muncă"
+  },
+  "common": {
+    "language": "Limbă"
+  }
+}

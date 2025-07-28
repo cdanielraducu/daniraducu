@@ -1,0 +1,54 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getCollection, type CollectionEntry } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import Main from "../../components/Main.astro";
+import H1 from "../../components/H1.astro";
+import H2 from "../../components/H2.astro";
+import Photo from "../../components/photo/Photo.astro";
+
+export const getStaticPaths = (async () => {
+  const posts = await getCollection("posts");
+
+  return posts.map((post) => {
+    return {
+      params: {
+        slug: post.slug,
+      },
+      props: {
+        post,
+      },
+    };
+  });
+}) satisfies GetStaticPaths;
+
+type Props = {
+  post: CollectionEntry<"posts">;
+};
+
+const { post } = Astro.props;
+
+const { Content } = await post.render();
+---
+
+<Layout title={post.data.title}>
+  <Main>
+    <div class="flex items-start">
+      <div class="min-w-max">
+        <Photo
+          src={post.data.image}
+          class="mb-4 aspect-thumbnail w-[80px] lg:w-[160px]"
+        />
+      </div>
+      <div class="ml-4 lg:ml-8 mt-0 lg:mt-4">
+        <H1 transition:name="title" text={post.data.title} class="" />
+        <H2 text={post.data.industry} class="line-clamp-1" />
+      </div>
+    </div>
+    <div
+      class="prose prose-lg lg:prose-xl text-white overflow-visible relative mb-20 prose-headings:text-white prose-h1:text-white prose-h2:text-white prose-h3:text-white prose-strong:text-white"
+    >
+      <Content />
+    </div>
+  </Main>
+</Layout>

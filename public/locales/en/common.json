@@ -1,0 +1,46 @@
+{
+  "nav": {
+    "home": "Home",
+    "work": "Work", 
+    "about": "About"
+  },
+  "home": {
+    "title": "Welcome!",
+    "greeting": "Hello, this is Dani Raducu.",
+    "location": "Based in Bucharest, Romania.",
+    "tags": {
+      "christian": "Christian",
+      "developer": "Developer",
+      "reader": "Reader"
+    }
+  },
+  "about": {
+    "title": "About",
+    "heading": "Thanks for stopping by. Who am I?",
+    "intro1": "I'm Dani, a CTI Engineer and University of Bucharest graduate with nearly 5 years of experience as a mobile developer. I'm passionate about leveraging technology to drive meaningful improvements and add value to the work I do.",
+    "intro2": "I'm committed to purposeful work, avoiding actions performed solely for their own sake. I'm proactive in asking questions to effectively plan and execute tasks with precision, and I embrace challenges with determination as a persistent problem-solver, always reaping knowledge rewards from every experience.",
+    "intro3": "I'm dedicated to continuous learning and skill enhancement to deliver innovative solutions and maximize impact through hard work.",
+    "intro4": "On the home page, you've probably noticed the three chips that describe me: Christian, Developer, and Reader. My faith as a Christian influences everything I do, including my work, as I strive to do everything by God's grace for Him!",
+    "passion": "Being a developer is not just my vocation but also my passion. I enjoy solving interesting problems and creating useful things. But at the core of it all is my identity as a Christian.",
+    "reading": "The third chip, \"Reader,\" represents one of my most visible hobbies. Surprisingly, I didn't like reading until I entered university, but I've come to appreciate it as a helpful habit. I make an effort to read as much as possible on various topics, with a particular focus on Theology books.",
+    "why_work": "Why choosing to work with me?",
+    "work_description": "I want to work responsibly. I am young and have time to spare - that's a thing that I've discovered lately is that with only one client. But I could also take more to work on. That is why I've created a company. It allows me to easily work for more than one client if needed. With it I also am being able to track every paper work required by a trusted accountant. That way, I can focus more on the work itself and not so much of the other administration things.",
+    "get_in_touch": "Get in touch",
+    "contact_intro": "If you want me to solve a problem for you, feel free to reach out! I'll respond shortly.",
+    "contact_form": {
+      "name": "Name",
+      "name_placeholder": "Your name",
+      "message": "Message", 
+      "message_placeholder": "Tell me about your project...",
+      "send": "Send Message"
+    },
+    "email_direct": "Or email me directly at:",
+    "blessing": "Bless you!"
+  },
+  "work": {
+    "title": "Work"
+  },
+  "common": {
+    "language": "Language"
+  }
+}

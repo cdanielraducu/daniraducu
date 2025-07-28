@@ -2,10 +2,16 @@
 import GitHubIcon from "../components/icons/GitHubIcon.astro";
 import LinkedInIcon from "../components/icons/LinkedInIcon.astro";
 import XIcon from "../components/icons/XIcon.astro";
-const textLinks: { label: string; href: string }[] = [
-  { label: "Home", href: "/" },
-  { label: "Work", href: "/work" },
-  { label: "About", href: "/about" },
+import { t } from "astro-i18next";
+import { getRelativeLocaleUrl } from "astro:i18n";
+
+const currentLocale = Astro.currentLocale || "en";
+const otherLocale = currentLocale === "en" ? "ro" : "en";
+
+const textLinks: { labelKey: string; href: string }[] = [
+  { labelKey: "nav.home", href: "/" },
+  { labelKey: "nav.work", href: "/work" },
+  { labelKey: "nav.about", href: "/about" },
 ];
 ---
 
@@ -35,25 +41,41 @@ const textLinks: { label: string; href: string }[] = [
       <LinkedInIcon />
     </a>
   </div>
-  <div class="flex bg-zinc-800 rounded-xl p-2">
-    {
-      textLinks.map(({ label, href }) => {
-        const activeStyle =
-          Astro.url.pathname === href ||
-          (href !== "/" && Astro.url.pathname.startsWith(href))
-            ? "bg-zinc-600 text-white"
-            : "bg-transparent text-white";
+  <div class="flex items-center space-x-4">
+    <div class="flex bg-zinc-800 rounded-xl p-2">
+      {
+        textLinks.map(({ labelKey, href }) => {
+          const localizedHref = currentLocale === "en" ? href : getRelativeLocaleUrl(currentLocale, href);
+          const activeStyle =
+            Astro.url.pathname === localizedHref ||
+            (href !== "/" && Astro.url.pathname.startsWith(localizedHref))
+              ? "bg-zinc-600 text-white"
+              : "bg-transparent text-white";
 
-        return (
-          <a
-            aria-current={Astro.url.pathname === href}
-            class={`p-2 rounded-lg ${activeStyle}`}
-            href={href}
-          >
-            {label}
-          </a>
-        );
-      })
-    }
+          return (
+            <a
+              aria-current={Astro.url.pathname === localizedHref}
+              class={`p-2 rounded-lg ${activeStyle}`}
+              href={localizedHref}
+            >
+              {t(labelKey)}
+            </a>
+          );
+        })
+      }
+    </div>
+    
+    <!-- Language Switcher -->
+    <div class="bg-zinc-800 rounded-xl p-2">
+      <a
+        href={otherLocale === "en" ? Astro.url.pathname.replace("/ro", "") || "/" : `/ro${Astro.url.pathname}`}
+        class="p-2 rounded-lg bg-transparent text-white hover:bg-zinc-600 transition-colors flex items-center"
+        title={otherLocale === "en" ? "Switch to English" : "Comută în română"}
+      >
+        <span class="text-sm font-medium">
+          {otherLocale === "en" ? "EN" : "RO"}
+        </span>
+      </a>
+    </div>
   </div>
 </header>
