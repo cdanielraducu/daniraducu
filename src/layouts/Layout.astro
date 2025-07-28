@@ -1,6 +1,7 @@
 ---
 import { ViewTransitions } from "astro:transitions";
 import Header from "./Header.astro";
+
 interface Props {
   title: string;
   description?: string;
@@ -12,16 +13,26 @@ const {
   description = "A description for this page app",
   image = "", // TODO: Update this
 } = Astro.props;
+
+const currentLocale = Astro.currentLocale || "en";
+const currentPath = Astro.url.pathname;
+
+// Generate alternate URLs for hreflang
+const enUrl = currentLocale === "en" ? currentPath : currentPath.replace("/ro", "") || "/";
+const roUrl = currentLocale === "ro" ? currentPath : `/ro${currentPath}`;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={currentLocale}>
   <head>
     <ViewTransitions />
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/webp" href="/favicon.webp" />
+    <link rel="alternate" hreflang="en" href={`https://cdanielraducu.github.io/daniraducu${enUrl}`} />
+    <link rel="alternate" hreflang="ro" href={`https://cdanielraducu.github.io/daniraducu${roUrl}`} />
+    <link rel="alternate" hreflang="x-default" href={`https://cdanielraducu.github.io/daniraducu${enUrl}`} />
     <meta name="generator" content={Astro.generator} />
     <meta name="og:image" content={image} />
     <title>{title}</title>

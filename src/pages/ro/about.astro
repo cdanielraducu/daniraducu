@@ -3,26 +3,25 @@ import H2 from "../../components/H2.astro";
 import Main from "../../components/Main.astro";
 import Layout from "../../layouts/Layout.astro";
 import Photo from "../../components/photo/Photo.astro";
-import { t } from "astro-i18next";
 ---
 
-<Layout title={t("about.title")}>
+<Layout title="Despre">
   <Main class="top-[20%] lg:top-[25%]">
     <div class="flex flex-col justify-center">
       <div class="flex items-center space-x-8 mb-8">
         <div class="prose prose-lg lg:prose-xl text-white">
-          <H2 text={t("about.heading")} />
+          <H2 text="Mulțumesc că ai trecut pe aici. Cine sunt eu?" />
           <p>
-            {t("about.intro1")}
+            Sunt Dani, inginer CTI și absolvent al Universității din București cu aproape 5 ani de experiență ca dezvoltator mobile. Sunt pasionat de utilizarea tehnologiei pentru a genera îmbunătățiri semnificative și a adăuga valoare muncii pe care o fac.
           </p>
           <p>
-            {t("about.intro2")}
+            Sunt dedicat unei munci cu scop, evitând acțiunile executate exclusiv pentru sine. Sunt proactiv în a pune întrebări pentru a planifica și executa eficient sarcinile cu precizie, și îmbrățișez provocările cu determinare ca un rezolvator de probleme persistent, cullegând mereu recompense de cunoaștere din fiecare experiență.
           </p>
           <p>
-            {t("about.intro3")}
+            Sunt dedicat învățării continue și îmbunătățirii abilităților pentru a livra soluții inovatoare și a maximiza impactul prin muncă asiduă.
           </p>
           <p>
-            {t("about.intro4")}
+            Pe pagina principală, probabil că ai observat cele trei etichete care mă descriu: Creștin, Dezvoltator și Cititor. Credința mea ca Creștin influențează tot ce fac, inclusiv munca mea, deoarece mă străduiesc să fac totul prin harul lui Dumnezeu pentru El!
           </p>
         </div>
         <Photo src="about" class="max-h-[500px] hidden lg:flex" />
@@ -30,43 +29,43 @@ import { t } from "astro-i18next";
 
       <div class="my-4 prose prose-lg lg:prose-xl text-white mb-20">
         <p>
-          {t("about.passion")}
+          A fi dezvoltator nu este doar vocația mea, ci și pasiunea mea. Îmi place să rezolv probleme interesante și să creez lucruri utile. Dar în centrul a tot este identitatea mea ca Creștin.
         </p>
         <p>
-          {t("about.reading")}
+          A treia etichetă, "Cititor", reprezintă unul dintre hobby-urile mele cele mai vizibile. Surprinzător, nu îmi plăcea să citesc până când am intrat la universitate, dar am ajuns să o apreciez ca pe un obicei util. Fac un efort să citesc cât mai mult posibil pe diverse subiecte, cu un accent deosebit pe cărțile de Teologie.
         </p>
-        <H2 text={t("about.why_work")} />
+        <H2 text="De ce să alegi să lucrezi cu mine?" />
         <p>
-          {t("about.work_description")}
+          Vreau să lucrez responsabil. Sunt tânăr și am timp liber - asta e ceva ce am descoperit recent este că doar cu un client. Dar aș putea să iau și mai mulți să lucrez cu ei. De aceea am creat o companie. Îmi permite să lucrez ușor pentru mai mult de un client dacă e nevoie. Cu ea sunt și capabil să urmăresc toate actele necesare de un contabil de încredere. În acest fel, mă pot concentra mai mult pe munca în sine și nu atât de mult pe celelalte lucruri administrative.
         </p>
-        <H2 text={t("about.get_in_touch")} />
+        <H2 text="Ia legătura" />
         <p>
-          {t("about.contact_intro")}
+          Dacă dorești să rezolv o problemă pentru tine, nu ezita să mă contactezi! Voi răspunde în scurt timp.
         </p>
         
         <div class="bg-zinc-800 p-6 rounded-xl shadow-lg w-full">
           <form id="contactForm" class="space-y-4">
             <div>
-              <label for="name" class="block text-sm font-medium text-zinc-300 mb-2">{t("about.contact_form.name")}</label>
+              <label for="name" class="block text-sm font-medium text-zinc-300 mb-2">Nume</label>
               <input
                 type="text"
                 id="name"
                 name="name"
                 required
                 class="w-full px-3 py-2 bg-zinc-700 border border-zinc-600 rounded-lg text-white placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-zinc-500"
-                placeholder={t("about.contact_form.name_placeholder")}
+                placeholder="Numele tău"
               />
             </div>
             
             <div>
-              <label for="message" class="block text-sm font-medium text-zinc-300 mb-2">{t("about.contact_form.message")}</label>
+              <label for="message" class="block text-sm font-medium text-zinc-300 mb-2">Mesaj</label>
               <textarea
                 id="message"
                 name="message"
                 rows="4"
                 required
                 class="w-full px-3 py-2 bg-zinc-700 border border-zinc-600 rounded-lg text-white placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-zinc-500"
-                placeholder={t("about.contact_form.message_placeholder")}
+                placeholder="Spune-mi despre proiectul tău..."
               ></textarea>
             </div>
             
@@ -74,17 +73,17 @@ import { t } from "astro-i18next";
               type="submit"
               class="w-full bg-zinc-600 hover:bg-zinc-500 text-white font-medium py-2 px-4 rounded-lg transition-colors"
             >
-              {t("about.contact_form.send")}
+              Trimite Mesajul
             </button>
           </form>
         </div>
         
         <p class="text-sm text-zinc-400 mt-4">
-          {t("about.email_direct")} <a href="mailto:cdanielraducu@gmail.com" class="text-white font-medium hover:underline">cdanielraducu@gmail.com</a>
+          Sau trimite-mi un email direct la: <a href="mailto:cdanielraducu@gmail.com" class="text-white font-medium hover:underline">cdanielraducu@gmail.com</a>
         </p>
         
         <p class="text-white">
-          {t("about.blessing")}
+          Te binecuvântez!
         </p>
       </div>
     </div>

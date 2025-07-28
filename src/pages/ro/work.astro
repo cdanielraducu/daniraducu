@@ -3,7 +3,6 @@ import { getCollection } from "astro:content";
 import Main from "../../components/Main.astro";
 import Layout from "../../layouts/Layout.astro";
 import PostsList from "../../components/PostsList.astro";
-import { t } from "astro-i18next";
 
 const allPosts = await getCollection("posts-ro");
 const posts = allPosts.sort((a, b) => {
@@ -16,7 +15,7 @@ const posts = allPosts.sort((a, b) => {
 });
 ---
 
-<Layout title={t("work.title")}>
+<Layout title="Muncă">
   <Main class="top-[25%] lg:top-[40%]">
     <PostsList posts={posts} />
   </Main>

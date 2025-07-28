@@ -2,16 +2,21 @@
 import GitHubIcon from "../components/icons/GitHubIcon.astro";
 import LinkedInIcon from "../components/icons/LinkedInIcon.astro";
 import XIcon from "../components/icons/XIcon.astro";
-import { t } from "astro-i18next";
-import { getRelativeLocaleUrl } from "astro:i18n";
 
-const currentLocale = Astro.currentLocale || "en";
+const currentPath = Astro.url.pathname;
+const isRomanian = currentPath.startsWith("/ro");
+const currentLocale = isRomanian ? "ro" : "en";
 const otherLocale = currentLocale === "en" ? "ro" : "en";
 
-const textLinks: { labelKey: string; href: string }[] = [
-  { labelKey: "nav.home", href: "/" },
-  { labelKey: "nav.work", href: "/work" },
-  { labelKey: "nav.about", href: "/about" },
+const navLabels = {
+  en: { home: "Home", work: "Work", about: "About" },
+  ro: { home: "Acasă", work: "Muncă", about: "Despre" }
+};
+
+const textLinks: { label: string; href: string }[] = [
+  { label: navLabels[currentLocale].home, href: "/" },
+  { label: navLabels[currentLocale].work, href: "/work" },
+  { label: navLabels[currentLocale].about, href: "/about" },
 ];
 ---
 
@@ -44,8 +49,8 @@ const textLinks: { labelKey: string; href: string }[] = [
   <div class="flex items-center space-x-4">
     <div class="flex bg-zinc-800 rounded-xl p-2">
       {
-        textLinks.map(({ labelKey, href }) => {
-          const localizedHref = currentLocale === "en" ? href : getRelativeLocaleUrl(currentLocale, href);
+        textLinks.map(({ label, href }) => {
+          const localizedHref = currentLocale === "en" ? href : `/ro${href}`;
           const activeStyle =
             Astro.url.pathname === localizedHref ||
             (href !== "/" && Astro.url.pathname.startsWith(localizedHref))
@@ -58,7 +63,7 @@ const textLinks: { labelKey: string; href: string }[] = [
               class={`p-2 rounded-lg ${activeStyle}`}
               href={localizedHref}
             >
-              {t(labelKey)}
+              {label}
             </a>
           );
         })
