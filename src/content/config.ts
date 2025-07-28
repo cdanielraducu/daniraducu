@@ -13,4 +13,5 @@ const postsCollections = defineCollection({
 
 export const collections = {
   posts: postsCollections,
+  "posts-ro": postsCollections,
 };

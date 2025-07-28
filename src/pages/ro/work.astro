@@ -5,7 +5,7 @@ import Layout from "../../layouts/Layout.astro";
 import PostsList from "../../components/PostsList.astro";
 import { t } from "astro-i18next";
 
-const allPosts = await getCollection("posts");
+const allPosts = await getCollection("posts-ro");
 const posts = allPosts.sort((a, b) => {
   // Convert DD/MM/YYYY to MM/DD/YYYY for proper Date parsing
   const dateA = a.data.date.split('/');

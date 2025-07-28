@@ -1,14 +1,14 @@
 ---
 import type { GetStaticPaths } from "astro";
 import { getCollection, type CollectionEntry } from "astro:content";
-import Layout from "../../layouts/Layout.astro";
-import Main from "../../components/Main.astro";
-import H1 from "../../components/H1.astro";
-import H2 from "../../components/H2.astro";
-import Photo from "../../components/photo/Photo.astro";
+import Layout from "../../../layouts/Layout.astro";
+import Main from "../../../components/Main.astro";
+import H1 from "../../../components/H1.astro";
+import H2 from "../../../components/H2.astro";
+import Photo from "../../../components/photo/Photo.astro";
 
 export const getStaticPaths = (async () => {
-  const posts = await getCollection("posts");
+  const posts = await getCollection("posts-ro");
 
   return posts.map((post) => {
     return {
@@ -23,7 +23,7 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths;
 
 type Props = {
-  post: CollectionEntry<"posts">;
+  post: CollectionEntry<"posts-ro">;
 };
 
 const { post } = Astro.props;
