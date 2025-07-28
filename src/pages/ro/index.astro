@@ -1,34 +1,35 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import H1 from "../components/H1.astro";
-import Main from "../components/Main.astro";
-import CrossIcon from "../components/icons/CrossIcon.astro";
-import DeveloperIcon from "../components/icons/DeveloperIcon.astro";
-import ReadIcon from "../components/icons/ReadIcon.astro";
-import H2 from "../components/H2.astro";
-import Photo from "../components/photo/Photo.astro";
+import Layout from "../../layouts/Layout.astro";
+import H1 from "../../components/H1.astro";
+import Main from "../../components/Main.astro";
+import CrossIcon from "../../components/icons/CrossIcon.astro";
+import DeveloperIcon from "../../components/icons/DeveloperIcon.astro";
+import ReadIcon from "../../components/icons/ReadIcon.astro";
+import H2 from "../../components/H2.astro";
+import Photo from "../../components/photo/Photo.astro";
+import { t } from "astro-i18next";
 ---
 
-<Layout title="Welcome!">
+<Layout title={t("home.title")}>
   <Main>
     <div
       class="flex flex-col lg:flex-row space-x-0 lg:space-x-8 space-y-8 lg:space-y-0"
     >
       <div class="flex flex-col mx-auto items-center">
-        <H1 text="Hello, this is Dani Raducu." class="text-center" />
-        <H2 text="Based in Bucharest, Romania." class="text-center" />
+        <H1 text={t("home.greeting")} class="text-center" />
+        <H2 text={t("home.location")} class="text-center" />
         <div class="flex flex-wrap items-center justify-center gap-2 mb-4">
           <div class="bg-zinc-600 rounded-3xl w-max p-2.5 flex">
             <CrossIcon />
-            <p class="text-md text-white font-medium ml-1">Christian</p>
+            <p class="text-md text-white font-medium ml-1">{t("home.tags.christian")}</p>
           </div>
           <div class="bg-zinc-600 rounded-3xl w-max p-3 flex">
             <DeveloperIcon />
-            <p class="text-md text-white font-medium ml-2">Developer</p>
+            <p class="text-md text-white font-medium ml-2">{t("home.tags.developer")}</p>
           </div>
           <div class="bg-zinc-600 rounded-3xl w-max p-3 flex">
             <ReadIcon />
-            <p class="text-md text-white font-medium ml-2">Reader</p>
+            <p class="text-md text-white font-medium ml-2">{t("home.tags.reader")}</p>
           </div>
         </div>
         <Photo
