@@ -5,23 +5,23 @@ import Layout from "../../layouts/Layout.astro";
 import Photo from "../../components/photo/Photo.astro";
 ---
 
-<Layout title="Despre">
+<Layout title="Despre mine">
   <Main class="top-[20%] lg:top-[25%]">
     <div class="flex flex-col justify-center">
       <div class="flex items-center space-x-8 mb-8">
         <div class="prose prose-lg lg:prose-xl text-white">
-          <H2 text="Mulțumesc că ai trecut pe aici. Cine sunt eu?" />
+          <H2 text="Bună! Cine sunt?" />
           <p>
-            Sunt Dani, inginer CTI și absolvent al Universității din București cu aproape 5 ani de experiență ca dezvoltator mobile. Sunt pasionat de utilizarea tehnologiei pentru a genera îmbunătățiri semnificative și a adăuga valoare muncii pe care o fac.
+            Sunt Dani, inginer software și absolvent al Universității din București, cu aproape 5 ani de experiență în dezvoltarea aplicațiilor mobile. Sunt pasionat de tehnologie și de modul în care aceasta poate aduce îmbunătățiri semnificative în procesele de lucru și în experiența utilizatorilor.
           </p>
           <p>
-            Sunt dedicat unei munci cu scop, evitând acțiunile executate exclusiv pentru sine. Sunt proactiv în a pune întrebări pentru a planifica și executa eficient sarcinile cu precizie, și îmbrățișez provocările cu determinare ca un rezolvator de probleme persistent, cullegând mereu recompense de cunoaștere din fiecare experiență.
+            Sunt orientat către rezultate concrete și abordez fiecare proiect cu atenție la detalii. Prefer să înțeleg în profunzime cerințele înainte de implementare și să colaborez eficient cu echipa pentru a livra soluții de calitate în termene realiste.
           </p>
           <p>
-            Sunt dedicat învățării continue și îmbunătățirii abilităților pentru a livra soluții inovatoare și a maximiza impactul prin muncă asiduă.
+            Cred în învățarea continuă și adaptarea la noile tehnologii pentru a rămâne relevant în industrie și pentru a putea contribui la proiecte din ce în ce mai complexe și interesante.
           </p>
           <p>
-            Pe pagina principală, probabil că ai observat cele trei etichete care mă descriu: Creștin, Dezvoltator și Cititor. Credința mea ca Creștin influențează tot ce fac, inclusiv munca mea, deoarece mă străduiesc să fac totul prin harul lui Dumnezeu pentru El!
+            Pe pagina principală poți vedea cele trei aspecte care mă definesc: Creștin, Dezvoltator și Cititor. Credința mea creștină îmi oferă o perspectivă solidă asupra valorilor și responsabilităților profesionale, ghidându-mă în toate aspectele muncii mele.
           </p>
         </div>
         <Photo src="about" class="max-h-[500px] hidden lg:flex" />
@@ -29,18 +29,18 @@ import Photo from "../../components/photo/Photo.astro";
 
       <div class="my-4 prose prose-lg lg:prose-xl text-white mb-20">
         <p>
-          A fi dezvoltator nu este doar vocația mea, ci și pasiunea mea. Îmi place să rezolv probleme interesante și să creez lucruri utile. Dar în centrul a tot este identitatea mea ca Creștin.
+          Dezvoltarea software nu este doar profesia mea, ci și pasiunea mea. Îmi place să rezolv probleme complexe și să construiesc aplicații utile care fac diferența pentru utilizatori. În centrul activității mele profesionale se află valorile și principiile creștine.
         </p>
         <p>
-          A treia etichetă, "Cititor", reprezintă unul dintre hobby-urile mele cele mai vizibile. Surprinzător, nu îmi plăcea să citesc până când am intrat la universitate, dar am ajuns să o apreciez ca pe un obicei util. Fac un efort să citesc cât mai mult posibil pe diverse subiecte, cu un accent deosebit pe cărțile de Teologie.
+          Al treilea aspect, "Cititor", reflectă pasiunea mea pentru învățare. Deși inițial nu îmi plăcea să citesc, universitatea mi-a schimbat perspectiva și acum consider lectura o metodă excelentă de dezvoltare personală și profesională. Citesc diverse cărți, cu accent pe teologie și dezvoltare personală.
         </p>
-        <H2 text="De ce să alegi să lucrezi cu mine?" />
+        <H2 text="De ce să colaborăm?" />
         <p>
-          Vreau să lucrez responsabil. Sunt tânăr și am timp liber - asta e ceva ce am descoperit recent este că doar cu un client. Dar aș putea să iau și mai mulți să lucrez cu ei. De aceea am creat o companie. Îmi permite să lucrez ușor pentru mai mult de un client dacă e nevoie. Cu ea sunt și capabil să urmăresc toate actele necesare de un contabil de încredere. În acest fel, mă pot concentra mai mult pe munca în sine și nu atât de mult pe celelalte lucruri administrative.
+          Îmi doresc să abordez fiecare proiect cu profesionalismul necesar. Fiind la începutul carierei, am disponibilitatea și energia să mă implic complet în proiecte provocatoare. Am înființat o firmă care îmi permite să gestionez eficient colaborările cu mai mulți clienți, beneficiind de suportul unui contabil de încredere pentru aspectele administrative. Astfel, mă pot concentra pe ceea ce fac cel mai bine: dezvoltarea de soluții software de calitate.
         </p>
-        <H2 text="Ia legătura" />
+        <H2 text="Să luăm legătura" />
         <p>
-          Dacă dorești să rezolv o problemă pentru tine, nu ezita să mă contactezi! Voi răspunde în scurt timp.
+          Dacă ai un proiect interesant sau o provocare tehnică pe care crezi că te-aș putea ajuta să o rezolvi, nu ezita să mă contactezi. Răspund prompt la toate mesajele.
         </p>
         
         <div class="bg-zinc-800 p-6 rounded-xl shadow-lg w-full">
@@ -65,7 +65,7 @@ import Photo from "../../components/photo/Photo.astro";
                 rows="4"
                 required
                 class="w-full px-3 py-2 bg-zinc-700 border border-zinc-600 rounded-lg text-white placeholder-zinc-400 focus:outline-none focus:ring-2 focus:ring-zinc-500"
-                placeholder="Spune-mi despre proiectul tău..."
+                placeholder="Detalii despre proiectul tău..."
               ></textarea>
             </div>
             
@@ -73,17 +73,17 @@ import Photo from "../../components/photo/Photo.astro";
               type="submit"
               class="w-full bg-zinc-600 hover:bg-zinc-500 text-white font-medium py-2 px-4 rounded-lg transition-colors"
             >
-              Trimite Mesajul
+              Trimite mesajul
             </button>
           </form>
         </div>
         
         <p class="text-sm text-zinc-400 mt-4">
-          Sau trimite-mi un email direct la: <a href="mailto:cdanielraducu@gmail.com" class="text-white font-medium hover:underline">cdanielraducu@gmail.com</a>
+          Sau scrie-mi direct la: <a href="mailto:cdanielraducu@gmail.com" class="text-white font-medium hover:underline">cdanielraducu@gmail.com</a>
         </p>
         
         <p class="text-white">
-          Te binecuvântez!
+          Să avem o colaborare fructuoasă!
         </p>
       </div>
     </div>
