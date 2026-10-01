@@ -3,22 +3,36 @@ author: Dani
 title: "EPAM Systems"
 slug: "epam"
 categories: ["dezvoltare software", "enterprise"]
-date: 21/07/2025
+date: 01/10/2026
 featured: false
 image: epam
 industry: Dezvoltare Software & Consultanță
-duration: 1 an și continuă
+duration: 2 ani și 4 luni, în prezent
 ---
 
 EPAM Systems este o companie globală lider în furnizarea de servicii de inginerie și dezvoltare pentru platforme digitale. Compania se concentrează pe simplificarea complexității tehnologice, cu accent pe experiența clientului, arhitectura produselor și transformarea digitală.
 
-Lucrez în prezent la EPAM Systems în București, România, ca Dezvoltator Software pe proiectul AHTH-CDAP pentru clientul Ahold Delhaize, din iulie 2024. Această poziție reprezintă o etapă importantă în cariera mea de dezvoltator, concentrându-mă pe soluții de retail și distribuție prin tehnologii mobile.
+Lucrez în prezent la EPAM Systems în București, România, pe proiectul AHTH-CDAP pentru clientul Ahold Delhaize, din iulie 2024 (2 ani și 4 luni). Am început ca Software Engineer (iulie 2024 - iunie 2026) și am fost promovat ca Senior Software Engineer în iunie 2026, cu responsabilități extinse asupra platformei mobile. Această poziție reprezintă o etapă importantă în cariera mea de dezvoltator, concentrându-mă pe soluții de retail și distribuție prin tehnologii mobile.
 
 ## Prezentarea Proiectului - Soluția Mobilă White Label Ahold Delhaize
 
 Contribui la o inițiativă Agile focalizată pe livrarea continuă pentru soluția mobilă White Label în regiunea BeCSE. Colaborez cu echipe multidisciplinare pentru a susține, optimiza și implementa actualizări de funcționalități pe șase branduri diferite, utilizând React Native ca tehnologie principală pentru aplicația mobilă.
 
-## Responsabilități Principale
+## Responsabilități ca Senior Software Engineer (iunie 2026 - prezent)
+
+• **Ownership CI/CD**: Răspund end-to-end de sănătatea pipeline-ului CI/CD, inclusiv build-uri, semnarea codului, provisioning profiles, keystore-uri și automatizarea release-urilor pentru iOS și Android
+
+• **Notificări Push și Deep Linking**: Conduc arhitectura notificărilor push și a deep linking-ului (APNs/FCM, universal links), îmbunătățind engagement-ul și navigarea în aplicație
+
+• **Optimizarea Performanței**: Diagnostichez și rezolv memory leak-uri și probleme de randare, inclusiv optimizarea virtualizării listelor (FlashList vs FlatList)
+
+• **Native Bridging și Arhitectură**: Aplic cunoștințe de native bridging (JSI, legacy bridge) pentru a fundamenta deciziile de arhitectură și de actualizare a platformei
+
+• **Estimare și Planificare**: Coordonez estimările echipei și planificarea sprinturilor, tratând story points ca pe o complexitate relativă și reducând riscurile prin spike-uri timpurii
+
+• **Mentorat**: Îndrum colegii în ceea ce privește calitatea codului, testarea (Jest, ESLint) și bunele practici React Native
+
+## Responsabilități ca Software Engineer (iulie 2024 - iunie 2026)
 
 • **Dezvoltare Aplicații Mobile**: Dezvolt și mențin funcționalitățile aplicației folosind React Native și ecosistemul complet de biblioteci asociate
 
