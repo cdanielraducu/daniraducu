@@ -3,22 +3,36 @@ author: Dani
 title: "EPAM Systems"
 slug: "epam"
 categories: ["software engineering", "enterprise"]
-date: 21/07/2025
+date: 01/10/2026
 featured: false
 image: epam
 industry: Software Engineering & Consulting
-duration: 1 year and counting
+duration: 2 years 4 months and counting
 ---
 
 EPAM Systems is a leading global provider of digital platform engineering and development services. The company helps make the complex simple with a focus on customer experience, product engineering, and digital transformation.
 
-Currently working at EPAM Systems in Bucharest, Romania as a Developer on the AHTH-CDAP project for client Ahold Delhaize since July 2024. This role represents a significant step in my software engineering career, focusing on retail and distribution solutions through mobile technology.
+Currently working at EPAM Systems in Bucharest, Romania on the AHTH-CDAP project for client Ahold Delhaize since July 2024 (2 years 4 months). I joined as a Software Engineer (July 2024 - June 2026) and was promoted to Senior Software Engineer in June 2026, with expanded ownership across the mobile platform. This role represents a significant step in my software engineering career, focusing on retail and distribution solutions through mobile technology.
 
 ## Project Overview - Ahold Delhaize White Label Mobile Solution
 
 Working on an Agile-driven initiative focused on continuous delivery for the White Label Mobile solution in the BeCSE region. I partner with cross-functional teams to concurrently support, enhance, and implement feature updates across six banners, leveraging React Native as the core technology for the mobile application.
 
-## Key Responsibilities
+## Senior Software Engineer Responsibilities (June 2026 - Present)
+
+• **CI/CD Ownership**: Own CI/CD pipeline health end-to-end, including build artifacts, code signing, provisioning profiles, keystores, and release automation for iOS and Android
+
+• **Push Notifications & Deep Linking**: Lead the push notification and deep linking architecture (APNs/FCM, universal links), improving engagement and in-app navigation
+
+• **Performance Engineering**: Diagnose and resolve memory leaks and rendering performance issues, including list-virtualization tuning (FlashList vs FlatList)
+
+• **Native Bridging & Architecture**: Apply native-bridging knowledge (JSI, legacy bridge) to inform architecture and platform-upgrade decisions
+
+• **Estimation & Planning**: Drive team estimation and sprint planning, treating story points as relative complexity and de-risking unknowns through early spikes
+
+• **Mentoring**: Mentor engineers on code quality, testing (Jest, ESLint), and React Native best practices
+
+## Software Engineer Responsibilities (July 2024 - June 2026)
 
 • **Mobile Development**: Develop and maintain application features using React Native and its comprehensive library ecosystem
 
